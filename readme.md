@@ -20,7 +20,7 @@ Para evitar que seu código receba atualizações automáticas do modulo, é pre
 
 ```hcl
 module "connection_1" {
-  source           = "git::https://timbrasil@dev.azure.com/timbrasil/Projeto_IaC/_git/azr-network/modulo-connection.git?ref=v1.0.0"
+  source           = "git::https://github.com/mgsj2006/azurerm-module-vnet-gw-connection.git?ref=v0.1.0"
   name             = "connection_1"
   type             = "ExpressRoute"
   vnet_gw_id       = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resource-group/providers/Microsoft.Network/virtualNetworkGateways/vnet_gw"
